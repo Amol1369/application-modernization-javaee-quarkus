@@ -65,7 +65,7 @@
 	<env-entry>
 		<env-entry-name>DBUNIT_CONNECTION_URL</env-entry-name>
 		<env-entry-type>java.lang.String</env-entry-type>
-		<env-entry-value>jdbc:db2://localhost:50000/ORDERDB</env-entry-value>
+		<env-entry-value>${DBUNIT_CONNECTION_URL}</env-entry-value>
 	</env-entry>
 		<env-entry>
 		<env-entry-name>DBUNIT_SCHEMA</env-entry-name>
