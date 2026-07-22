@@ -85,11 +85,11 @@
 		<env-entry>
 			<env-entry-name>CUSTOMER_ORDER_SERVICES_WEB_ENDPOINT</env-entry-name>
 			<env-entry-type>java.lang.String</env-entry-type>
-			<env-entry-value>https://localhost:9443/CustomerOrderServicesWeb/</env-entry-value>
+			<env-entry-value>${WEB_URL_PREFIX}</env-entry-value>
 		</env-entry>
 		<env-entry>
 			<env-entry-name>CUSTOMER_ORDER_SERVICES_TEST_ENDPOINT</env-entry-name>
 			<env-entry-type>java.lang.String</env-entry-type>
-			<env-entry-value>System.getenv("TEST_URL_PREFIX");</env-entry-value>
+			<env-entry-value>${TEST_URL_PREFIX}</env-entry-value>
 		</env-entry>
 </web-app>
