@@ -39,8 +39,8 @@ public class CustomerOrderRESTTest extends TestCase {
 			urlTestPrefix = (String) envEntryContext.lookup("CUSTOMER_ORDER_SERVICES_TEST_ENDPOINT");
 		} catch (NamingException e) {
 			e.printStackTrace();
-			urlPrefix = "https://localhost:9443/CustomerOrderServicesWeb/";
-			urlTestPrefix = "http://localhost:9080/CustomerOrderServicesTest/";
+			urlPrefix = System.getenv("WEB_URL_PREFIX");
+			urlTestPrefix = System.getenv("TEST_URL_PREFIX");
 		}
 		
 		javax.ws.rs.core.Application app = new javax.ws.rs.core.Application() {
