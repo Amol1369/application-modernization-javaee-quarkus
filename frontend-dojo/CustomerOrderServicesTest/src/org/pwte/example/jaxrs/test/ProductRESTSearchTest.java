@@ -22,7 +22,7 @@ public class ProductRESTSearchTest extends TestCase {
 			urlPrefix = (String) envEntryContext.lookup("CUSTOMER_ORDER_SERVICES_WEB_ENDPOINT");
 		} catch (NamingException e) {
 			e.printStackTrace();
-			urlPrefix = "https://localhost:9443/CustomerOrderServicesWeb/";
+			urlPrefix = System.getenv("WEB_URL_PREFIX");
 		}
 	}
 
