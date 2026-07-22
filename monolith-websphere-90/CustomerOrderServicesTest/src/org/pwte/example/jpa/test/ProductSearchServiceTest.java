@@ -46,11 +46,11 @@ public class ProductSearchServiceTest extends DBTestCase {
 		} catch (NamingException e) {
 			e.printStackTrace();
 			
-			DBUNIT_DRIVER_CLASS = "com.ibm.db2.jcc.DB2Driver";
-			DBUNIT_CONNECTION_URL = "jdbc:db2://localhost:50000/ORDERDB";
-			DBUNIT_SCHEMA = "DB2INST1";
-			DBUNIT_USERNAME = "DB2INST1";
-			DBUNIT_PASSWORD = "password";
+			DBUNIT_DRIVER_CLASS = System.getenv("DBUNIT_DRIVER_CLASS");
+			DBUNIT_CONNECTION_URL = System.getenv("DBUNIT_CONNECTION_URL");
+			DBUNIT_SCHEMA = System.getenv("DBUNIT_SCHEMA");
+			DBUNIT_USERNAME = System.getenv("DBUNIT_USERNAME");
+			DBUNIT_PASSWORD = System.getenv("DBUNIT_PASSWORD");
 		}
 		
 		System.setProperty( PropertiesBasedJdbcDatabaseTester.DBUNIT_DRIVER_CLASS, DBUNIT_DRIVER_CLASS );
